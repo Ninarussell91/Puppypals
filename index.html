@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Party RSVP and Event Planner</title>
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <h1>RSVP & Event Planner</h1>
+
+    <div>
+        <form id="guestLog">
+            <p>Tell us about yourself:</p>
+            <input type="text" id="guestName" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="guest@email.com" required>
+            <input type="tel" id="phone" placeholder="123-456-7890" required>
+            <button type="submit" class="submitRsvp">Submit RSVP</button>
+        </form>
+
+        <form id="eventSubmission">
+            <p>Tell us about your event:</p>
+            <input type="text" id="eventName" placeholder="Event name" required>
+            <input type="datetime-local" id="eventDateTime" required>
+            <input type="text" id="eventLocation" placeholder="Event location" required>
+            <input type="text" id="eventDescription" placeholder="Event description" required>
+            <button type="submit">Submit Event</button>
+        </form>
+
+        <ul id="parties">
+            <!-- Event list will appear here -->
+        </ul>
+    </div>
+</body>
+</html>
